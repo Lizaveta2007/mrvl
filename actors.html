@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Marvel – Актори</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showActor(actor) {
+            alert("Ви вибрали: " + actor);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Актори Marvel</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="photo.html">Фото</a></li>
+                <li><a href="video.html">Відео</a></li>
+                <li><a href="actors.html">Актори</a></li>
+                <li><a href="films.html">Фільми</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Відомі актори кіновсесвіту Marvel</h2>
+
+        <table border="1">
+            <tr>
+                <th>Ім’я актора</th>
+                <th>Герой</th>
+                <th>Фільм</th>
+            </tr>
+            <tr>
+                <td>Роберт Дауні-молодший</td>
+                <td>Залізна людина</td>
+                <td>Iron Man</td>
+            </tr>
+            <tr>
+                <td>Кріс Еванс</td>
+                <td>Капітан Америка</td>
+                <td>The First Avenger</td>
+            </tr>
+            <tr>
+                <td>Скарлетт Йоханссон</td>
+                <td>Чорна вдова</td>
+                <td>Black Widow</td>
+            </tr>
+        </table>
+
+        <section class="actor-gallery">
+            <img src="img/downey.jpg" alt="Роберт Дауні" width="200" onclick="showActor('Роберт Дауні')">
+            <img src="img/evans.jpg" alt="Кріс Еванс" width="200" onclick="showActor('Кріс Еванс')">
+            <img src="img/johansson.jpg" alt="Скарлетт Йоханссон" width="200" onclick="showActor('Скарлетт Йоханссон')">
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Marvel Україна. Усі права захищено.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+</html><main>
+    <h2>Фото героїв Marvel</h2>
+    <img src="img/ironman.jpg" alt="Залізна людина" width="300">
+    <img src="img/thor.jpg" alt="Тор" width="300">
+</main>>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Marvel – Фото</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function enlarge(imageId) {
+            const img = document.getElementById(imageId);
+            if (img.style.transform === "scale(1.5)") {
+                img.style.transform = "scale(1)";
+            } else {
+                img.style.transform = "scale(1.5)";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Галерея Marvel</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="photo.html">Фото</a></li>
+                <li><a href="video.html">Відео</a></li>
+                <li><a href="actors.html">Актори</a></li>
+                <li><a href="films.html">Фільми</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Улюблені герої у фотографіях</h2>
+
+        <section class="gallery">
+            <img id="img1" src="img/ironman.jpg" alt="Залізна людина" width="300" onclick="enlarge('img1')">
+            <img id="img2" src="img/captainamerica.jpg" alt="Капітан Америка" width="300" onclick="enlarge('img2')">
+            <img id="img3" src="img/thor.jpg" alt="Тор" width="300" onclick="enlarge('img3')">
+        </section>
+
+        <p>Натисніть на фото, щоб збільшити або зменшити його.</p>
+    </main>
+
+    <footer>
+        <p>© 2025 Marvel Україна. Усі права захищено.</p>
+    </footer>
+</body>
+</html>

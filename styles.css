@@ -1,0 +1,113 @@
+﻿body {
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #1a1a1a, #4a4a4a);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e62429;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+    .menu li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+main {
+    padding: 20px;
+    background-color: #2b2b2b;
+}
+
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+.videos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+    .gallery img {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        border-radius: 10px;
+    }
+.actor-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+    .actor-gallery img {
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+        .actor-gallery img:hover {
+            transform: scale(1.1);
+        }
+.rating-form {
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 20px auto;
+    color: white;
+}
+
+    .rating-form input[type="text"],
+    .rating-form input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .rating-form input[type="submit"] {
+        padding: 10px 20px;
+        margin-top: 10px;
+        background-color: #e62429;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+        .rating-form input[type="submit"]:hover {
+            background-color: #c51c21;
+        }
